@@ -39,7 +39,7 @@ export default class TodoList extends React.Component {
           </td>
           <td>
             <span style={{ display: isShow }}>{item.text}</span>
-            <input style={{ display: isEdit }} type="text" value={item.text} onChange={this.handleChange.bind(this, item.id)} />
+            <input className="edit" style={{ display: isEdit }} type="text" value={item.text} onChange={this.handleChange.bind(this, item.id)} />
           </td>
           <td>
             <a href="javascript:;" className="btn btn-outline-primary" onClick={this.handleMode.bind(this, item.id)}>{item.button}</a>
@@ -57,7 +57,7 @@ export default class TodoList extends React.Component {
         <thead>
           <tr>
             <th scope="col">完成</th>
-            <th scope="col">事項清單</th>
+            <th scope="col">事項</th>
             <th scope="col">狀態</th>
             <th scope="col">移除</th>
           </tr>

@@ -4,7 +4,6 @@
   
 }
 
-
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -24,4 +23,10 @@ h1 {
   padding: 10px 20px;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.edit {
+  display: inline-block;
+  width: 100%;
+  max-width: 200px;
 }
